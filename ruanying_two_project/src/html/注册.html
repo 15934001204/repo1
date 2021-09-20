@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>regist</title>
+    <link rel="stylesheet" href="../resource/layui/css/layui.css">
+    <script src="../resource/layui/layui.js"></script>
+    <link rel="stylesheet" href="../resource/css/regist_login_head.css">
+    <script src="../resource/jq/jquery-3.5.1.min.js"></script>
+  <style>
+    #context h1{
+        margin-top: 50px;
+     text-align: center;
+  }
+    #context input{
+        margin: 10px auto auto;
+        width: 350px;
+        height: 40px;
+    }
+    #relative_input{
+        position: absolute;
+        left: 725px;
+        top: 147px;
+        height: 40px;
+        width: 140px;
+        color: #FFFFFF;
+        background: #57565F;
+    }
+    #relative_input2{
+        width: 350px;
+        height: 40px;
+        background: #FF3C3C;
+        color: #FFFFFF;
+        position: relative;
+        left: 516px;
+        top: 5px;
+    }
+    #p1{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 7px;
+        position: relative;
+        left: -55px;
+    }
+    #p2{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 7px;
+        position: relative;
+
+    }
+    #p3{
+        font-size: 7px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+<div>
+ <div>
+   <div style="float: left;">
+   <img id="logo_pic" src="../resource/images/logo.png"></div>
+   <div id="logo">
+     <p id="head_right">
+     <span >您好，欢迎光临1号店<span class="spans">&nbsp;<a href="" >请登录!</a></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <div class="head_pic">
+           <img  src="../resource/images/runbun.png" style="padding-top: 1px " height="10">帮助中心<img src="../resource/images/turnb.png"  height="15" alt="">
+       </div>
+     </p>
+   </div>
+ </div>
+</div>
+<div id="context">
+     <h1>1号店注册</h1>
+    <form class="layui-form" action="登录.html">
+    <input type="text" placeholder="手机号"  lay-verify="required" class="layui-input">
+    <input style="margin-left :515px ; width: 200px" type="text" lay-verify="required" placeholder="验证码" class="layui-input">
+    <button  id="relative_input" type="button" class="layui-btn layui-btn-primary">获取验证码</button>
+    <input type="text" placeholder="密码" lay-verify="required" class="layui-input">
+    <input type="text" placeholder="确认密码" lay-verify="required" class="layui-input">
+    <p id="p1">点击注册,表示您同意1号店<span>《服务协议》</span></p>
+    <button id="relative_input2" type="submit" lay-submit="" class="layui-btn layui-btn-primary" value="">同意协议并注册</button>
+    </form>
+    <p id="p2"><span class="spansfoot" style="color: #000000"><a href="">沪ICP备13044278号</a></span>&nbsp;|&nbsp;合字B1.B2-20130004 &nbsp;|&nbsp;<span class="spansfoot" style="color: black"><a
+            href="">营业执照</a></span></p>
+    <p id="p3">Copyright &#169;1号店网上超市2007-2016,ALL&nbsp; Right&nbsp; Reserved</p>
+
+</div>
+</body>
+<script>
+    $(function () {
+        $("#relative_input2").click(function () {
+           console.log($(this)[0].value);
+        })
+    })
+
+</script>
+</html>
